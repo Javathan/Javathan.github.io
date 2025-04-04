@@ -74,19 +74,28 @@
         .bold-text {
             font-weight: bold;
         }
-
-.fake-link {
-    color: #0077cc;
-    font-size: 1.2em;
-    cursor: pointer;
-}
-.fake-link:hover {
-    text-decoration: underline;
-}
+        .fake-link {
+            color: #0077cc;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        .fake-link:hover {
+            text-decoration: underline;
+        }
+        .clock-container {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            font-size: 1em;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 5px 10px;
+            border-radius: 8px;
+            z-index: 999;
+        }
     </style>
 </head>
-
-    <div style="position: fixed; top: 10px; left: 10px; font-size: 1em; background-color: rgba(255, 255, 255, 0.7); padding: 5px 10px; border-radius: 8px; z-index: 999;">
+<body>
+    <div class="clock-container">
         <span id="date"></span><br>
         <span id="clock"></span>
     </div>
