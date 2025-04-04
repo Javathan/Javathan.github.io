@@ -85,6 +85,22 @@
 }
     </style>
 </head>
+
+    <div style="text-align:center; font-size: 1.2em; margin-top: 40px;">
+        <span id="date"></span> | <span id="clock"></span>
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('date').textContent = now.toLocaleDateString(undefined, dateOptions);
+            document.getElementById('clock').textContent = now.toLocaleTimeString();
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+    
 <body>
     <div class="header-banner">St. Theresa Of Lisieux</div>
 
