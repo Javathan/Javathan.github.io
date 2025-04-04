@@ -22,10 +22,10 @@
             margin-top: 20px;
             font-size: 1.8em;
         }
-        p.description {
+        p.description, p.club-description {
             max-width: 800px;
             margin: 0 0 20px 0; /* Removing auto margin to make it left-aligned */
-            font-size: 1.2em;
+            font-size: 1.2em; /* Ensured both paragraphs have the same font size */
             color: #333;
         }
         ul {
@@ -38,7 +38,7 @@
         a {
             text-decoration: none;
             color: #0077cc;
-            font-size: 1.2em;
+            font-size: 1.2em; /* Ensuring all links have the same size */
         }
         a:hover {
             text-decoration: underline;
@@ -51,6 +51,12 @@
         .blue-link {
             color: #0077cc;
         }
+        .club-description {
+            font-size: 1.2em;
+        }
+        .club-links {
+            font-size: 1.2em; /* Ensuring social media links and '- Instagram' text match in size */
+        }
     </style>
 </head>
 <body>
@@ -60,30 +66,30 @@
     <p>All <a href="#link" class="blue-link">/links</a> can be accessed as <strong>stl-links.javathan.github.io/link</strong>.</p>
 
     <h2>Student Government Social Media</h2>
-    <p>Below is a list of some of the clubs offered at St. Theresa Of Lisieux Catholic High School. Each club has a link to their social media page where you can learn more about their activities:</p>
+    <p class="club-description">Below is a list of some of the clubs offered at St. Theresa Of Lisieux Catholic High School. Each club has a link to their social media page where you can learn more about their activities:</p>
     <ul>
-        <li><a href="https://www.instagram.com/stl_drama/" target="_blank">Athletic Council</a> – Instagram</li>
-        <li><a href="https://www.instagram.com/stl_science/" target="_blank">Chaplaincy Council</a> – Instagram</li>
-        <li><a href="https://www.instagram.com/stl_music/" target="_blank">Cub Council</a> – Instagram</li>
-        <li><a href="https://www.instagram.com/stl_sports/" target="_blank">Diversity and Equity Council</a> – Instagram</li>
-        <li><a href="https://www.instagram.com/stl_art/" target="_blank">Enviormental Council</a> – Instagram</li>
-        <li><a href="https://www.instagram.com/stl_debate/" target="_blank">Intramural  Council</a> – Instagram</li>
-        <li><a href="https://www.instagram.com/stl_sports/" target="_blank">Social Justice Council</a> – Instagram</li>
-        <li><a href="https://www.instagram.com/stl_art/" target="_blank">Spirit Council</a> – Instagram</li>
-        <li><a href="https://www.instagram.com/stl_debate/" target="_blank">Student Council</a> – Instagram</li>
+        <li><a href="https://www.instagram.com/stl_drama/" target="_blank">Athletic Council</a> – <span class="club-links">Instagram</span></li>
+        <li><a href="https://www.instagram.com/stl_science/" target="_blank">Chaplaincy Council</a> – <span class="club-links">Instagram</span></li>
+        <li><a href="https://www.instagram.com/stl_music/" target="_blank">Cub Council</a> – <span class="club-links">Instagram</span></li>
+        <li><a href="https://www.instagram.com/stl_sports/" target="_blank">Diversity and Equity Council</a> – <span class="club-links">Instagram</span></li>
+        <li><a href="https://www.instagram.com/stl_art/" target="_blank">Enviormental Council</a> – <span class="club-links">Instagram</span></li>
+        <li><a href="https://www.instagram.com/stl_debate/" target="_blank">Intramural Council</a> – <span class="club-links">Instagram</span></li>
+        <li><a href="https://www.instagram.com/stl_sports/" target="_blank">Social Justice Council</a> – <span class="club-links">Instagram</span></li>
+        <li><a href="https://www.instagram.com/stl_art/" target="_blank">Spirit Council</a> – <span class="club-links">Instagram</span></li>
+        <li><a href="https://www.instagram.com/stl_debate/" target="_blank">Student Council</a> – <span class="club-links">Instagram</span></li>
     </ul>
     
     <h2>School Links</h2>
     <ul>
-        <li><a href="https://www.ycdsb.ca/admissions/">/math</a> – Admission</li>
-        <li><a href="https://stlh.ycdsb.ca/">/official</a> – School Website</li>
-        <li><a href="https://www.ycdsb.ca/">/clubs</a> – YCDSB Website</li>
-        <li><a href="https://connect.edsembli.com/ON/YCDSB/STLH/Portal/viewer/login/login.aspx?LoginType=S">/portal</a> – Student Portal</li>
-        <li><a href="https://www.school-day.com/">/payments</a> – School Payments</li>
-        <li><a href="https://locator.ycdsb.ca/schoollocator/">/transportation</a> – Bus Schedule</li>
-        <li><a href="https://stlh.ycdsb.ca/our-school/calendar/">/science</a> – Calendar</li>
-        <li><a href="https://ycdsb.elearningontario.ca/d2l/home">/clubs</a> – D2L Learning</li>
-        <li><a href="https://www.ycdsb.ca/wp-content/uploads/Policy118-Trustee-Code-Conduct.docx-9-2.pdf">/sports</a> – Code of Conduct</li>
+        <li><a href="https://www.ycdsb.ca/admissions/">/math</a> – <span class="club-links">Admission</span></li>
+        <li><a href="https://stlh.ycdsb.ca/">/official</a> – <span class="club-links">School Website</span></li>
+        <li><a href="https://www.ycdsb.ca/">/clubs</a> – <span class="club-links">YCDSB Website</span></li>
+        <li><a href="https://connect.edsembli.com/ON/YCDSB/STLH/Portal/viewer/login/login.aspx?LoginType=S">/portal</a> – <span class="club-links">Student Portal</span></li>
+        <li><a href="https://www.school-day.com/">/payments</a> – <span class="club-links">School Payments</span></li>
+        <li><a href="https://locator.ycdsb.ca/schoollocator/">/transportation</a> – <span class="club-links">Bus Schedule</span></li>
+        <li><a href="https://stlh.ycdsb.ca/our-school/calendar/">/science</a> – <span class="club-links">Calendar</span></li>
+        <li><a href="https://ycdsb.elearningontario.ca/d2l/home">/clubs</a> – <span class="club-links">D2L Learning</span></li>
+        <li><a href="https://www.ycdsb.ca/wp-content/uploads/Policy118-Trustee-Code-Conduct.docx-9-2.pdf">/sports</a> – <span class="club-links">Code of Conduct</span></li>
     </ul>
     
     <footer>
