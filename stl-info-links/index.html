@@ -103,27 +103,26 @@
 <br>
 <span id="view-counter">Loading view count...</span>
 
-    <script>
-        function updateClock() {
-            const now = new Date();
-            const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            document.getElementById('date').textContent = now.toLocaleDateString(undefined, dateOptions);
-            document.getElementById('clock').textContent = now.toLocaleTimeString();
-        }
-        setInterval(updateClock, 1000);
-        updateClock();
+<script>
+    function updateClock() {
+        const now = new Date();
+        const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('date').textContent = now.toLocaleDateString(undefined, dateOptions);
+        document.getElementById('clock').textContent = now.toLocaleTimeString();
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
 
-// Visitor counter using CountAPI
-fetch('https://api.countapi.xyz/hit/stlchs-site/views')
-    .then(res => res.json())
-    .then(data => {
-        document.getElementById('view-counter').textContent = `Site views: ${data.value}`;
-    })
-    .catch(() => {
-        document.getElementById('view-counter').textContent = 'Site views: unavailable';
-    });
-
-    </script>
+    // Visitor counter using CountAPI
+    fetch('https://api.countapi.xyz/update/stlchs-site/views/?amount=1')
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById('view-counter').textContent = `Site views: ${data.value}`;
+        })
+        .catch(() => {
+            document.getElementById('view-counter').textContent = 'Site views: unavailable';
+        });
+</script>
     
 <body>
     <div class="header-banner">St. Theresa Of Lisieux</div>
