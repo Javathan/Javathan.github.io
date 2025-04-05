@@ -100,6 +100,9 @@
         <span id="clock"></span>
     </div>
 
+<br>
+<span id="view-counter">Loading view count...</span>
+
     <script>
         function updateClock() {
             const now = new Date();
@@ -109,6 +112,17 @@
         }
         setInterval(updateClock, 1000);
         updateClock();
+
+// Visitor counter using CountAPI
+fetch('https://api.countapi.xyz/hit/stlchs-site/views')
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById('view-counter').textContent = `Site views: ${data.value}`;
+    })
+    .catch(() => {
+        document.getElementById('view-counter').textContent = 'Site views: unavailable';
+    });
+
     </script>
     
 <body>
